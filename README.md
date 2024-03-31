@@ -1,1 +1,2 @@
-# Faithfulness_Book_Summarization
+Evaluating faithfulness and content selection in book-length summarization
+
