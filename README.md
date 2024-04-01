@@ -29,4 +29,4 @@ identify a systematic over-emphasis on events occurring towards the end
 of the book. We will release our annotations to spur further research on the
 evaluation of book-length summarization.
 
-![](./misc/pipeline.pdf)
+![Pipeline of work](./misc/pipeline.png)
