@@ -9,13 +9,32 @@ While long-context large language models (LLMs) can technically summarize book-l
 
 ![Pipeline of work](./misc/pipeline-1.png)
 
-## Data Collection
+## Data
+
+FABLES is a dataset created from book-length summaries of narrative books published in 2023-2024. The data contains:
+
+🪄 `Summaries` -- Entire books summarized by one of five models: Mixtral, GPT-3.5-Turbo, GPT-4, GPT-4-Turbo, and Claude-3-Opus, using the hierarchical merging method described in [Chang et al.](https://arxiv.org/pdf/2310.00785.pdf).
+
+🪄 `Claims` -- Decontextualized claims extracted from each summary using GPT-4.
+
+🪄 `Faithfulness Label` -- Assigned by native English-speaking annotators based on their reading. Labels are **"Yes"** (accurate reflection), **"No"** (misrepresentation), **"PartialSupport"** (partially corroborated), or **"Inapplicable"** (indeterminable), applied to each claim.
+
+🪄 `Reason` -- Annotators' justification for each faithfulness label, provided for most claims.
+
+🪄 `Evidence` -- Source text quotations provided by annotators to support their labels, available for most claims.
+
+🪄 `General Comment` -- Overview of issues with the set of claims, including omissions of important information, chronology, salience (mention of unimportant events/details), factuality, and others like repetitiveness or vagueness, with each summary receiving a comment.
+
+ Please note that the full source texts, being copyrighted, are not included in our release. However, we provide a list of the books for purchase, facilitating further investigation into summary accuracy and claim verification.
+
 
 Coming soon!
 
-## Data Structure
 
-Coming soon!
+### Disclaimer
+
+The narratives included in this dataset explore a range of themes, some of which may be sensitive, including mental health struggles such as depression, murder, and suicide. Reader discretion is advised.
+
 
 ### Citation Information
 If you use this dataset, please cite it as follows:
