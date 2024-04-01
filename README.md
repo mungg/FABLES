@@ -27,9 +27,9 @@ FABLES is a dataset created from book-length summaries of narrative books publis
 
  Please note that the full source texts, being copyrighted, are not included in our release. However, we provide a list of the books for purchase, facilitating further investigation into summary accuracy and claim verification.
 
-
+```
 Coming soon!
-
+```
 
 ## Disclaimer
 
