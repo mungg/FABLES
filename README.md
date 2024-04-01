@@ -31,12 +31,12 @@ FABLES is a dataset created from book-length summaries of narrative books publis
 Coming soon!
 
 
-### Disclaimer
+## Disclaimer
 
 The narratives included in this dataset explore a range of themes, some of which may be sensitive, including mental health struggles such as depression, murder, and suicide. Reader discretion is advised.
 
 
-### Citation Information
+## Citation Information
 If you use this dataset, please cite it as follows:
 ```
 @misc{fables-2024-kim-et-al,
