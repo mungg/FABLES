@@ -34,10 +34,10 @@ FALBES data is based on json format, it looks like:
     *  `summary`: (str) 
     *  `general Comment`: (str)
     *  `claims`: (dict)
-      * `claim`: (str)
-      * `label`: (str)
-      * `evidence`: (list of str)
-      * `reason`: (list of str)
+       * `claim`: (str)
+       * `label`: (str)
+       * `evidence`: (list of str)
+       * `reason`: (list of str)
         
 
 
