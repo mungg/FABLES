@@ -43,7 +43,7 @@ Coming soon!
 
 Number of tokens across books and annotations (`v1`); based on [`tiktoken`](https://github.com/openai/tiktoken) tokenizer.
 
-Please note that the full source texts, being copyrighted, are not included in our release. However, we provide a list of the books for purchase, facilitating further investigation into summary accuracy and claim verification.
+Please note that the full source texts, being copyrighted, are not included in our release. However, we provide a [list](https://github.com/mungg/FABLES/blob/main/booklist.md) of the books for purchase, facilitating further investigation into summary accuracy and claim verification.
 
 
 ## Disclaimer
