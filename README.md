@@ -25,11 +25,27 @@ FABLES is a dataset created from book-length summaries of narrative books publis
 
 🪄 `General Comment` -- Overview of issues with the set of claims, including omissions of important information, chronology, salience (mention of unimportant events/details), factuality, and others like repetitiveness or vagueness, with each summary receiving a comment.
 
- Please note that the full source texts, being copyrighted, are not included in our release. However, we provide a list of the books for purchase, facilitating further investigation into summary accuracy and claim verification.
 
 ```
 Coming soon!
 ```
+
+### Corpus Statistics
+
+|                    | **Books (Documents)** | **Books (Summaries)** | **Books (Claims)** | **Annotations (Reasons)** | **Annotations (Evidence)** | **Annotations (Comments)** |
+|--------------------|-----------------------|-----------------------|--------------------|---------------------------|----------------------------|----------------------------|
+|                    |       (n=26)          |       (n=130)         |      (n=3,158)     |        (n=1,513)          |          (n=3,051)         |          (n=130)           |
+| **Mean**           | 121,467               | 594.3                 | 19.8               | 37.6                      | 194.7                      | 155                        |
+| **St. dev.**       | 35,836                | 119.5                 | 6.4                | 33.4                      | 218.5                      | 148.4                      |
+| **Max**            | 243,965               | 798                   | 58                 | 281                       | 2,435                      | 823                        |
+| **Min**            | 49,762                | 172                   | 6                  | 2                         | 5                          | 6                          |
+
+
+Number of tokens across books and annotations; based on `tiktoken` tokenizer. [https://github.com/openai/tiktoken](https://github.com/openai/tiktoken)
+
+
+ Please note that the full source texts, being copyrighted, are not included in our release. However, we provide a list of the books for purchase, facilitating further investigation into summary accuracy and claim verification.
+
 
 ## Disclaimer
 
