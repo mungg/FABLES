@@ -16,7 +16,7 @@ While long-context large language models (LLMs) can technically summarize book-l
 
 🪄 `Book Title` -- Title of the book used for summarization. Each title is a `dict` contaitning data related to the book.
 
-🪄 `Model Name` -- Name of the model that summariezed the book: MIXTRAL, GPT-3.5-TURBO, GPT-4, GPT-4-TURBO, or CLAUDE-3-OPUS. A `dict` containing all summary data for tha model.
+🪄 `Model Name` -- Name of the model that summariezed the book: MIXTRAL, GPT-3.5-TURBO, GPT-4, GPT-4-TURBO, or CLAUDE-3-OPUS. A `dict` containing all summary data for that model.
 
 🪄 `General Comment` -- (`str`) Overview of issues with the set of claims, including omissions of important information, chronology, salience (mention of unimportant events/details), factuality, and others like repetitiveness or vagueness, with each summary receiving a comment.
 
@@ -30,13 +30,13 @@ While long-context large language models (LLMs) can technically summarize book-l
 
 🪄 `Evidence` -- (`list`) List of evidence, source text quotations, provided by annotators to support their labels (available for most claims).
 
-FALBES data is stored in a json file with the following format:
+FALBES data is stored in a JSON file, formatted as follows (where 'book title' and 'model name' are placeholders for their actual values):
 
 ```markdown
 * `book title`: (str) 
   * `model name`: (str) 
     *  `summary`: (str) 
-    *  `general comment`: (str)
+    *  `general_comment`: (str)
     *  `claims`: (dict)
        * `claim`: (str)
        * `label`: (str)
@@ -45,7 +45,7 @@ FALBES data is stored in a json file with the following format:
 ```
 
 
-Here is an example showing one entry:
+Example entry:
 
 ```json
 {
@@ -66,11 +66,7 @@ Here is an example showing one entry:
 }
 
 ```
-
-
-
-
-        
+  
 
 
 ### Corpus Statistics
@@ -89,9 +85,10 @@ Number of tokens across books and annotations (`v1`); based on [`tiktoken`](http
 Please note that the full source texts, being copyrighted, are not included in our release. However, we provide a [list](https://github.com/mungg/FABLES/blob/main/booklist.md) of the books for purchase, facilitating further investigation into summary accuracy and claim verification.
 
 
+
 ## Disclaimer
 
-The narratives included in this dataset explore a range of themes, some of which may be sensitive, including mental health struggles such as depression, murder, and suicide. Reader discretion is advised.
+The narratives included in this dataset explore a range of themes, some of which may be sensitive, including mental health struggles such as depression, murder, and suicide.
 
 
 ## Citation Information
@@ -101,7 +98,7 @@ If you use this dataset, please cite it as follows:
 author = {Kim, Yekyung and Chang, Yapei and Karpinska, Marzena and Garimella, Aparna and Manjunatha, Varun and Lo, Kyle and Goyal, Tanya and Iyyer, Mohit},
 month = {4},
 title = {FABLES: Evaluating faithfulness and content selection in book-length summarization},
-url = {},
+url = {https://arxiv.org/abs/2404.01261},
 year = {2024}
 }
 ```
