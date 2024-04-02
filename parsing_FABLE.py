@@ -3,6 +3,9 @@ import json
 with open("data/FABLES.json", "r") as f:
     data = json.load(f)
 
+# get FABLE data
+data = data['FABLES']
+
 # change this or select from data.keys()
 book_key = "Flawless"
 book_key_list = data.keys()
