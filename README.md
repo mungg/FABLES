@@ -44,8 +44,9 @@ While long-context large language models (LLMs) can technically summarize book-l
        * `evidence`: (list of str)
        * `reason`: (list of str)
 ```
-Note_1: The `book title` and `model name` are placeholders for their actual values.
-Note_2: In the `claims` dictionary, each claim is indexed numerically as a key, with each key pointing to a dictionary containing the fields `claim`, `label`, `evidence`, and `reason`.
+* The `book title` and `model name` are placeholders for their actual values.
+
+* In the `claims` dictionary, each claim is indexed numerically as a key, with each key pointing to a dictionary containing the fields `claim`, `label`, `evidence`, and `reason`.
 
 Example entry:
 
