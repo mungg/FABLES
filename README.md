@@ -13,17 +13,43 @@ While long-context large language models (LLMs) can technically summarize book-l
 
 `FABLES` is a dataset created from book-length summaries of narrative books published in 2023-2024. The data contains:
 
-🪄 `Summaries` -- Entire books summarized by one of five models: Mixtral, GPT-3.5-Turbo, GPT-4, GPT-4-Turbo, and Claude-3-Opus, using the hierarchical merging method described in [Chang et al.](https://arxiv.org/pdf/2310.00785.pdf).
+🪄 `Book Titles` -- Titles of books used for summarization. Each title is a `dict` contaitning data related to the book.
 
-🪄 `Claims` -- Decontextualized claims extracted from each summary using GPT-4.
+🪄 `Model Name` -- Name of the model that summariezed the book: Mixtral, GPT-3.5-Turbo, GPT-4, GPT-4-Turbo, or Claude-3-Opus. A `dict` containing all summary data for tha model.
 
-🪄 `Faithfulness Label` -- Assigned by native English-speaking annotators based on their reading. Labels are **"Yes"** (accurate reflection), **"No"** (misrepresentation), **"PartialSupport"** (partially corroborated), or **"Inapplicable"** (indeterminable), applied to each claim.
+🪄 `General Comment` -- (`str`) Overview of issues with the set of claims, including omissions of important information, chronology, salience (mention of unimportant events/details), factuality, and others like repetitiveness or vagueness, with each summary receiving a comment.
 
-🪄 `Reason` -- Annotators' justification for each faithfulness label, provided for most claims.
+🪄 `Summary` -- (`str`) Entire book summarized by one of five models: Mixtral, GPT-3.5-Turbo, GPT-4, GPT-4-Turbo, and Claude-3-Opus, using the hierarchical merging method described in [Chang et al.](https://arxiv.org/pdf/2310.00785.pdf).
 
-🪄 `Evidence` -- Source text quotations provided by annotators to support their labels, available for most claims.
+🪄 `Claims` -- (`dict`)  Numbered dictionary of decontextualized claims extracted from each summary using GPT-4.
 
-🪄 `General Comment` -- Overview of issues with the set of claims, including omissions of important information, chronology, salience (mention of unimportant events/details), factuality, and others like repetitiveness or vagueness, with each summary receiving a comment.
+🪄 `Label` -- (`str`) Faithfulness label assigned by native English-speaking annotators based on their reading. Labels are **"Yes"** (accurate reflection), **"No"** (misrepresentation), **"PartialSupport"** (partially corroborated), or **"Inapplicable"** (indeterminable), applied to each claim.
+
+🪄 `Reason` -- (`list`) List of reasons provided by annotator' as a justification for each faithfulness label (provided for some claims).
+
+🪄 `Evidence` -- (`list`) List of evidence, source text quotations, provided by annotators to support their labels (available for most claims).
+
+
+
+```json
+{
+  "Wildfire": {
+    "CLAUDE-3-OPUS": {
+      "general_comment": "This summary is largely chronological (though Aurora's decision to not attend her father's wedding comes after Russ' father's visit) and hits the main thematic elements of the text, though it disproportionately addresses the epilogue over other portions of the text. The claims are factual, however.",
+      "summary": "Wildfire, the first book in the Icebreaker series, follows the love story of Aurora Roberts and Russ Callaghan, two college students who meet while working as counselors at Honey Acres, a sleepaway summer camp in California. Aurora, the daughter of a famous Formula 1 team owner, struggles with her distant father's lack of attention and affection, often acting out to gain his notice but facing continual disappointment. Russ, a reserved hockey player at UC Maple Hills, deals with the shame and embarrassment of his father's gambling addiction, which has strained their family relationships.(...)",
+      "claims": {
+        "0": {
+          "claim": "The book 'Wildfire' is the first in the Icebreaker series.",
+          "label": "No",
+          "evidence": ["n/a"],
+          "reason": ["Not quoted in the book, but this is the second in the series, after 'Icebreaker'."]
+        }
+      }
+    }
+  }
+}
+
+```
 
 
 
