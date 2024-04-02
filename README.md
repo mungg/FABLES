@@ -1,6 +1,6 @@
 # <img src="misc/fables.png" alt="FABLES" width="150" height="40"> : Evaluating faithfulness and content selection in book-length summarization
 
-This repo hosts the dataset for FABLES. More updates coming soon!
+This repo hosts `FABLES` (Faithfulness Annotations for Book-Length Summarization), a dataset of model-generated summaries with atomic claims annotated for faithfulness. More updates coming soon!
 
 `Authors`: Yekyung Kim, Yapei Chang, Marzena Karpinska, Aparna Garimella, Varun Manjunatha, Kyle Lo, Tanya Goyal, Mohit Iyyer
 
