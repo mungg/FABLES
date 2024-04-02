@@ -15,7 +15,7 @@ While long-context large language models (LLMs) can technically summarize book-l
 
 🪄 `Book Title` -- Title of the book used for summarization. Each title is a `dict` contaitning data related to the book.
 
-🪄 `Model Name` -- Name of the model that summariezed the book: Mixtral, GPT-3.5-Turbo, GPT-4, GPT-4-Turbo, or Claude-3-Opus. A `dict` containing all summary data for tha model.
+🪄 `Model Name` -- Name of the model that summariezed the book: MIXTRAL, GPT-3.5-TURBO, GPT-4, GPT-4-TURBO, or CLAUDE-3-OPUS. A `dict` containing all summary data for tha model.
 
 🪄 `General Comment` -- (`str`) Overview of issues with the set of claims, including omissions of important information, chronology, salience (mention of unimportant events/details), factuality, and others like repetitiveness or vagueness, with each summary receiving a comment.
 
