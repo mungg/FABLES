@@ -11,7 +11,7 @@ While long-context large language models (LLMs) can technically summarize book-l
 
 ## Data
 
-FABLES is a dataset created from book-length summaries of narrative books published in 2023-2024. The data contains:
+`FABLES` is a dataset created from book-length summaries of narrative books published in 2023-2024. The data contains:
 
 🪄 `Summaries` -- Entire books summarized by one of five models: Mixtral, GPT-3.5-Turbo, GPT-4, GPT-4-Turbo, and Claude-3-Opus, using the hierarchical merging method described in [Chang et al.](https://arxiv.org/pdf/2310.00785.pdf).
 
