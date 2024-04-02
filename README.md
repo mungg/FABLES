@@ -21,7 +21,7 @@ While long-context large language models (LLMs) can technically summarize book-l
 
 🪄 `Summary` -- (`str`) Entire book summarized by one of five models: Mixtral, GPT-3.5-Turbo, GPT-4, GPT-4-Turbo, and Claude-3-Opus, using the hierarchical merging method described in [Chang et al.](https://arxiv.org/pdf/2310.00785.pdf).
 
-🪄 `Claims` -- (`dict`)  Numbered dictionary of decontextualized claims extracted from each summary using GPT-4.
+🪄 `Claims` -- (`dict`)  Numbered dictionary of decontextualized claims from each summary extracted using GPT-4.
 
 🪄 `Label` -- (`str`) Faithfulness label assigned by native English-speaking annotators based on their reading. Labels are **"Yes"** (accurate reflection), **"No"** (misrepresentation), **"PartialSupport"** (partially corroborated), or **"Inapplicable"** (indeterminable), applied to each claim.
 
