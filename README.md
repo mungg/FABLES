@@ -1,7 +1,7 @@
 # <img src="misc/fables.png" alt="FABLES" width="150" height="40"> : [Evaluating faithfulness and content selection in book-length summarization](https://arxiv.org/pdf/2404.01261.pdf)
 [![arXiv](https://img.shields.io/badge/arXiv-2404.01261-b31b1b.svg)](https://arxiv.org/abs/2404.01261)
 
-This repo hosts `FABLES` (Faithfulness Annotations for Book-Length Summarization), a dataset of model-generated summaries with atomic claims annotated for faithfulness. More updates coming soon!
+This repo hosts `FABLES` (Faithfulness Annotations for Book-Length Summarization), a dataset of model-generated summaries with atomic claims annotated for faithfulness. Labels are supported by evidence and the annotator's reasoning, while claim sets include a general comment on the quality of the summary.
 
 `Authors`: Yekyung Kim, Yapei Chang, Marzena Karpinska, Aparna Garimella, Varun Manjunatha, Kyle Lo, Tanya Goyal, Mohit Iyyer
 
