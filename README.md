@@ -29,10 +29,10 @@ While long-context large language models (LLMs) can technically summarize book-l
 
 FALBES data is based on json format, it looks like:
 
-* `title of Book`: (str) 
+* `title of book`: (str) 
   * `model name`: (str) 
     *  `summary`: (str) 
-    *  `general Comment`: (str)
+    *  `general comment`: (str)
     *  `claims`: (dict)
        * `claim`: (str)
        * `label`: (str)
