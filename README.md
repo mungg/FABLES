@@ -26,9 +26,20 @@ While long-context large language models (LLMs) can technically summarize book-l
 🪄 `General Comment` -- Overview of issues with the set of claims, including omissions of important information, chronology, salience (mention of unimportant events/details), factuality, and others like repetitiveness or vagueness, with each summary receiving a comment.
 
 
-```
-Coming soon!
-```
+
+FALBES data is based on json format, it looks like:
+
+* `title of Book`: (str) 
+  * `model name`: (str) 
+    *  `summary`: (str) 
+    *  `general Comment`: (str)
+    *  `claims`:
+      * `claim`: (str)
+      * `label`: (str)
+      * `evidence`: (list of str)
+      * `reason`: (list of str)
+        
+
 
 ### Corpus Statistics
 
