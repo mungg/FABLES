@@ -53,7 +53,7 @@ While long-context large language models (LLMs) can technically summarize book-l
 
 
 
-FALBES data is based on json format, it looks like:
+FALBES data is stored in a json file with the following format:
 
 * `title of book`: (str) 
   * `model name`: (str) 
