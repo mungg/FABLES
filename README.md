@@ -13,7 +13,7 @@ While long-context large language models (LLMs) can technically summarize book-l
 
 `FABLES` is a dataset created from book-length summaries of narrative books published in 2023-2024. The data contains:
 
-🪄 `Book Titles` -- Titles of books used for summarization. Each title is a `dict` contaitning data related to the book.
+🪄 `Book Title` -- Title of the book used for summarization. Each title is a `dict` contaitning data related to the book.
 
 🪄 `Model Name` -- Name of the model that summariezed the book: Mixtral, GPT-3.5-Turbo, GPT-4, GPT-4-Turbo, or Claude-3-Opus. A `dict` containing all summary data for tha model.
 
@@ -29,7 +29,22 @@ While long-context large language models (LLMs) can technically summarize book-l
 
 🪄 `Evidence` -- (`list`) List of evidence, source text quotations, provided by annotators to support their labels (available for most claims).
 
+FALBES data is stored in a json file with the following format:
 
+```markdown
+* `book title`: (str) 
+  * `model name`: (str) 
+    *  `summary`: (str) 
+    *  `general comment`: (str)
+    *  `claims`: (dict)
+       * `claim`: (str)
+       * `label`: (str)
+       * `evidence`: (list of str)
+       * `reason`: (list of str)
+```
+
+
+Here is an example showing one entry:
 
 ```json
 {
@@ -53,17 +68,7 @@ While long-context large language models (LLMs) can technically summarize book-l
 
 
 
-FALBES data is stored in a json file with the following format:
 
-* `title of book`: (str) 
-  * `model name`: (str) 
-    *  `summary`: (str) 
-    *  `general comment`: (str)
-    *  `claims`: (dict)
-       * `claim`: (str)
-       * `label`: (str)
-       * `evidence`: (list of str)
-       * `reason`: (list of str)
         
 
 
