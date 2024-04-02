@@ -43,7 +43,7 @@ FALBES data is stored in a JSON file, formatted as follows (where 'book title' a
        * `evidence`: (list of str)
        * `reason`: (list of str)
 ```
-
+Note: In the `claims` dictionary, each claim is indexed numerically as a key, with each key pointing to a dictionary containing the fields `claim`, `label`, `evidence`, and `reason`.
 
 Example entry:
 
@@ -68,7 +68,6 @@ Example entry:
 ```
   
 
-
 ### Corpus Statistics
 
 |                    | **Books (Documents)** | **Books (Summaries)** | **Books (Claims)** | **Annotations (Reasons)** | **Annotations (Evidence)** | **Annotations (Comments)** |
@@ -83,6 +82,30 @@ Example entry:
 Number of tokens across books and annotations (`v1`); based on [`tiktoken`](https://github.com/openai/tiktoken) tokenizer.
 
 Please note that the full source texts, being copyrighted, are not included in our release. However, we provide a [list](https://github.com/mungg/FABLES/blob/main/booklist.md) of the books for purchase, facilitating further investigation into summary accuracy and claim verification.
+
+### Dataset Example
+
+Summary:
+>Romantic Comedy follows Sally, a talented Emmy-winning comedy writer for the hit TV show, "The Night Owls" (TNO), and her tumultuous journey through work, friendships, and romantic interests. The narrative delves into the chaotic, thrilling backstage antics of TNO, showcasing the stress, joy, and exhaustion that come with producing and performing a live comedy show. It outlines the complex professional dynamics within the industry, featuring colleagues such as Danny, who is engaged to the celebrity, Annabel Lily, as well as Viv and Henrietta, both TNO cast members. Sally also has to deal with an unresolved romantic past with Elliot, who is the head of TNO's writing department.  Her life takes a turn when she meets the show's guest host, Noah Brewster, a popular musician. Their bond deepens as they share intimate conversations revolving around their backgrounds, notably Sally's education at Duke University and Noah's decision to skip college for music. As their friendship blossoms amidst the backdrop of a global pandemic, Sally finds herself increasingly drawn to Noah, leading to an intricate email exchange about personal struggles, regrets, and ongoing lifestyle changes.  Balancing her professional responsibilities with her evolving personal life, Sally embarks on a solo drive from Kansas City to Los Angeles to visit Noah. Amidst their blooming romance, they have intimate conversations about past relationships, fears, and anxieties over their impending meeting. Noah openly discloses a past relationship with a woman named Louisiana, a revelation that deepens their understanding of each other.  Their relationship grows amid various hurdles, including a public break-up between Danny and Annabel which disrupts a live broadcast, Sally's former partner Jerry falling gravely ill, and escalating public scrutiny over leaked private photos of Sally and Noah together. Despite these challenges, Sally and Noah manage to navigate their intricately entangled lives, always gravitating back to one another.  Noah, cherishing his love for Sally more than his celebrity life, is unwavering in his affection towards her, even when her role in his public life becomes controversial due to increased paparazzi attention. Undeterred by the mounting challenges, intimate vulnerabilities are shared, fostering a deep intimacy between the two. At one point, Noah suggests that Sally stay in LA, which though jolts Sally's anxiety, signifies their strengthening bond.  Faced with the severity of Jerry's illness, speculated to be Covid-19, Sally and Noah return to Kansas to take care of him. Their shared experience propels them to reassess their relationship, eventually leading to Sally's decision to resign from TNO. Their bond culminates in a private wedding ceremony and their decision to settle in Kansas City. While Noah continues to create music, Sally embarks on a successful career as a scriptwriter in LA.  In this comedic roller coaster journey, the narrative skillfully depicts the convergence of their professional and personal lives, despite the complexities presented by the public spotlight, unresolved romances, and the pandemonium of the television industry. This not only strengthens their relationship but also allows Sally to find beauty in their shared growth, intricacies, and the absurdities of life. The story wraps up with Sally and Noah cherishing their bond, navigating their unique circumstances, and embracing their evolving roles in each other's lives amongst the backdrop of the chaotic TV industry.
+
+General Comment:
+>This is a well structured summary. The story progression is communicated very effectively and it is easily to get the overall plot of the book from it. In one claim Jerry is erroneously marked as Sally's partner, but overall the claims are accurate.
+
+Labled Claims:
+| # | Claim                                                                                                               | Label        |
+|---|-----------------------------------------------------------------------------------------------------------------------------|-----------------|
+| 0 | Romantic Comedy is a story that follows Sally, an Emmy-winning comedy writer for the hit TV show, "The Night Owls" (TNO).   | Yes             |
+| 1 | The narrative details the backstage antics of producing and performing a live comedy show, "The Night Owls".               | Yes             |
+| 2 | The story features several characters in the TV industry including Danny who is engaged to celebrity Annabel Lily, and Viv and Henrietta who are both TNO cast members. | Yes             |
+| 3 | Elliot, who is the head of TNO's writing department, has an unresolved romantic past with Sally.                           | PartialSupport  |
+| 4 | Sally, the main character, meets Noah Brewster, a popular musician, who is a guest host on the show.                       | Yes             |
+| 5 | Sally and Noah Brewster bond over intimate conversations about their backgrounds, including Sally's education at Duke University and Noah's decision to skip college for music. | Yes             |
+| 6 | Amidst a global pandemic, Sally finds herself increasingly attracted to Noah.                                               | Yes             |
+| 7 | Sally and Noah engage in an intricate email exchange discussing personal struggles, regrets, and ongoing lifestyle changes. | Yes             |
+| 8 | Sally embarks on a solo drive from Kansas City to Los Angeles to visit Noah Brewster.                                       | Yes             |
+| 9 | During their blossoming relationship, Sally and Noah have intimate conversations about past relationships, fears, and anxieties. | Yes             |
+| 10| Noah discloses a past relationship with a woman named Louisiana, deepening their mutual understanding.                      | Yes             |
+| 11| Their relationship faces hurdles including a public break-up between Danny and Annabel, the serious illness of Sally's former partner Jerry, and leaked private photos of Sally and Noah. | PartialSupport  |
 
 
 
