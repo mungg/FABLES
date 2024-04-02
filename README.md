@@ -33,7 +33,7 @@ FALBES data is based on json format, it looks like:
   * `model name`: (str) 
     *  `summary`: (str) 
     *  `general Comment`: (str)
-    *  `claims`:
+    *  `claims`: (dict)
       * `claim`: (str)
       * `label`: (str)
       * `evidence`: (list of str)
