@@ -99,10 +99,11 @@ The narratives included in this dataset explore a range of themes, some of which
 If you use this dataset, please cite it as follows:
 ```
 @misc{fables-2024-kim-et-al,
-author = {Kim, Yekyung and Chang, Yapei and Karpinska, Marzena and Garimella, Aparna and Manjunatha, Varun and Lo, Kyle and Goyal, Tanya and Iyyer, Mohit},
-month = {4},
-title = {FABLES: Evaluating faithfulness and content selection in book-length summarization},
-url = {https://arxiv.org/abs/2404.01261},
-year = {2024}
+      title={FABLES: Evaluating faithfulness and content selection in book-length summarization}, 
+      author={Yekyung Kim and Yapei Chang and Marzena Karpinska and Aparna Garimella and Varun Manjunatha and Kyle Lo and Tanya Goyal and Mohit Iyyer},
+      year={2024},
+      eprint={2404.01261},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL}
 }
 ```
