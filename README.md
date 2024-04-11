@@ -20,7 +20,7 @@ While long-context large language models (LLMs) can technically summarize book-l
 
 🪄 `General Comment` -- (`str`) Overview of issues with the set of claims, including omissions of important information, chronology, salience (mention of unimportant events/details), factuality, and others like repetitiveness or vagueness, with each summary receiving a comment.
 
-🪄 `Summary` -- (`str`) Entire book summarized by one of five models: Mixtral, GPT-3.5-Turbo, GPT-4, GPT-4-Turbo, and Claude-3-Opus, using the hierarchical merging method described in [Chang et al.](https://arxiv.org/pdf/2310.00785.pdf).
+🪄 `Summary` -- (`str`) Entire book summarized by one of five models: Mixtral, GPT-3.5-Turbo, GPT-4, GPT-4-Turbo, and Claude-3-Opus, using the hierarchical merging method described in [Chang et al.](https://arxiv.org/pdf/2310.00785.pdf). More specifically, for each step in hierarchical merging we used the prompts listed [here](https://github.com/lilakk/BooookScore/tree/2eda72ef0fce9d0fcf088bd355b11f9fed9bda1a/prompts/get_summaries_hier).
 
 🪄 `Claims` -- (`dict`)  Numbered dictionary of decontextualized claims from each summary extracted using GPT-4.
 
