@@ -92,7 +92,7 @@ Please note that the full source texts, being copyrighted, are not included in o
 
 ## Disclaimer
 
-The narratives included in this dataset explore a range of themes, some of which may be sensitive, including mental health struggles such as depression, murder, and suicide.
+The fictional narratives included in this dataset explore a range of themes, some of which may be sensitive, including mental health struggles such as depression, murder, and suicide.
 
 
 ## Citation Information
