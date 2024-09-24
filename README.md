@@ -69,7 +69,8 @@ Example entry:
 }
 
 ```
-  
+If you would like to access the book content dataset, please email me with your affiliation and the purpose of your work.
+
 
 ### Corpus Statistics
 
